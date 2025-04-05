@@ -58,3 +58,17 @@ document.addEventListener("keydown", function(event) {
         return false;
     }
 });
+
+window.addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    loader.style.opacity = '1';
+    
+    setTimeout(function() {
+        loader.style.transition = 'opacity 0.5s ease';
+        loader.style.opacity = '0';
+        
+        setTimeout(function() {
+            loader.style.display = 'none';
+        }, 500);
+    }, 2000);
+});
