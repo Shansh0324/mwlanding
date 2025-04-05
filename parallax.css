@@ -1,0 +1,53 @@
+.banner {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.banner .bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Adjusted */
+    background-position: center bottom;
+    transition: 0.1s;
+}
+
+.banner .bg-1 {
+    background-image: url('img/0.png');
+}
+.banner .bg-2 {
+    background-image: url('Parallax_img/ct1.png');
+}
+.banner .bg-3 {
+    background-image: url('Parallax_img/ct2.png'); /* Changed to avoid duplication */
+}
+.banner .bg-4 {
+    background-image: url('Parallax_img/ct3.png');
+}
+.banner .bg-5 {
+    background-image: url('Parallax_img/ct4.png');
+}
+.banner .bg-6 {
+    background-image: url('Parallax_img/ct5.png'); /* Added */
+}
+
+.banner h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+}
